@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Animation </title>
+<style>
+body{
+  background: url(sky.jpg);
+}
+
+.comets{
+  position:relative;
+  height:100%;
+  width: 1000px;
+  top: -200px;
+  min-height:900px;
+  overflow: hidden;
+}
+
+.comets >div{
+  display: inline-block;
+  box-shadow: inset 0px 0px 1px #294b67;
+  height:60px;
+  width: 5px;
+  border-radius: 5% 30% 70%;
+  border: 1px solid #333;
+  background-color: white;
+  animation: falling 14s linear 0s infinite;
+  animation-timing-function: 2s ease-in-out;
+  animation-iteration-count: 10;
+}
+
+.comets >div:nth-of-type(1) {
+  height: 60px; 
+  width: 1px;
+  background-color: white;
+  left: 10vw;
+}
+
+.comets >div:nth-of-type(2) {
+  height: 70px; 
+  width: 2px;
+  background-color: white;
+  left: 100vw;
+  animation: calling 10s linear 4s alternate;
+}
+
+.comets >div:nth-of-type(3) {
+  height: 50px; 
+  width: 5px;
+  background-color: white;
+  left: 0px;
+ animation: calling2 15s linear 8s infinite;
+ animation-iteration-count: 7;
+}
+
+
+@keyframes falling {
+
+  0% {
+    transform: translate3d(100px,0px,0px) rotate(160deg);
+  }
+
+  3% {
+    transform:
+    translate3d(450px,900px,0) rotate(160deg);
+  }
+  100% {
+    transform:
+    translate3d(450px,900px,0) rotate(160deg);
+  }
+}
+
+@keyframes calling2 {
+
+  0% {
+    transform: translate3d(100px,0px,0px) rotate(160deg);
+  }
+
+  3% {
+    transform:
+    translate3d(450px,900px,0) rotate(160deg);
+  }
+  100% {
+    transform:
+    translate3d(450px,900px,0) rotate(160deg);
+  }
+}
+
+@keyframes calling {
+
+  0% {
+    transform: translate3d(50px,0px,0px) rotate(160deg);
+  }
+
+  3% {
+    transform:
+    translate3d(450px,900px,0) rotate(160deg);
+  }
+  100% {
+    transform:
+    translate3d(450px,900px,0) rotate(16deg);
+  }
+}
+
+.q{
+ background-color: white;
+ color: blue;
+ padding: 20px;
+}
+
+.g {
+  width: 100%;
+   height: 30%;
+  background-color: #C0C0C0;
+  color: black;
+  text-align: center;
+  font-size: 70%;
+}
+
+</style>
+<meta name="viewport"
+content="width=980">
+</head>
+<body>
+<font face="Showcard Gothic" color="yellow" size="15%"><b> <u> Animation Of Meteor Shower </u> </b> </font>
+<br>
+
+
+<div class="comets">
+  <div></div>
+  <div></div> 
+  <div></div>
+</div>
+<h2 class= "q">
+This is a general animation of meteor showers. It is very difficult to view in night sky as it moves in a flash There are certain months for seeing different types of meteor outbursts.<h2>
+<audio controls>
+<source src="audio.mp3" type="audio/mp3">
+</audio>
+<br>
+<br>
+<footer class="g">
+<br>
+<br>
+<br>
+<br>
+<p> <b> Best platform to host static website </b> </p> <img src="github.png" width= 6%>
+<br>
+<br>
+<p> <b> Available in </b> </p> <icon> <img src="Gmail.png" width=6%> </icon>
+<br>
+<br>
+</footer>
+</body>
+</html>
